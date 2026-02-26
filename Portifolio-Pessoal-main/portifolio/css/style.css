@@ -1,0 +1,718 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(var(--background2)0%, var(--background)10%, var(--background)100%);
+    /* background-color: var(--background); */
+    /* background: linear-gradient(var(--linearSkills2)0%,var(--linearSkills1)30%, var(--linearSkills1)70%, var(--linearSkills2)100%); */
+
+
+}
+
+/* Universal */
+.strongO {
+    font-weight: 700;
+    color: var(--strongO);
+}
+
+
+/* header */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    width: 100%;
+    background-color: var(--corHeader);
+    box-shadow: 0 5px 20px 3px var(--sombra);
+    justify-content: space-between;
+}
+
+.nome-header {
+    padding: 20px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    color: var(--branco);
+}
+
+header ul {
+    justify-self: center;
+    display: flex;
+    gap: 80px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+header ul li {
+    transition: 0.5s;
+}
+
+header ul li:hover {
+    transform: translateY(-3px);
+}
+
+header svg {
+    color: var(--strongH);
+    width: 40px;
+    height: auto;
+
+}
+
+
+
+.strongH {
+    font-weight: 700;
+    color: var(--strongH);
+    margin-left: 10px;
+}
+
+.btn-tema {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--detalheTemaButton);
+    background-color: var(--corHeader);
+    box-shadow: 0 0px 20px 4px var(--sombraButtonTema);
+}
+
+
+.btn-tema svg {
+    color: var(--detalheTemaButton);
+}
+
+.btn-tema:hover {}
+
+/* Home */
+
+.home {
+    margin-top: 20px;
+    width: 100%;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homeAgrupado {
+    gap: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemHome {
+    padding: 30px;
+    display: flex;
+    width: 550px;
+    height: auto;
+}
+
+.iconsHome {
+    margin-top: 15px;
+    
+}
+
+.iconsHome ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+
+}
+
+.iconsHome ul li {
+    transition: 0.5s;
+     
+}
+
+.iconsHome ul li:hover {
+    transform: scale(1.08);
+          filter: drop-shadow(2px 2px 2px var(--sombraButtonTema)
+      );
+}
+
+
+.iconsHome ul svg {
+    
+    list-style: none;
+    color: var(--iconesHome);
+    width: 90px;
+    height: auto;
+}
+
+.textoHomeAgrupado h1 {
+    margin-bottom: 10px;
+    color: var(--corLetra);
+    font-weight: 400;
+    font-size: 90px;
+}
+
+.textoHomeAgrupado h2 {
+    color: var(--corLetra);
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.textoHomeAgrupado h3 {
+    color: var(--strongO);
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.textoHomeAgrupado p {
+    color: var(--corLetra);
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.home .destaqueHome {
+    font-weight: 700;
+    color: var(--strongO);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Projetos */
+
+.projetos {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 3em;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos h1 {
+    text-align: center;
+    padding: 10px;
+    color: var(--corLetra);
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.subProjetoh2 {
+    font-weight: 500;
+    color: var(--corLetra);
+    font-size: 30px;
+    text-align: center;
+}
+
+.skillsProjetoAgrupado {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.skills h1 {
+    text-align: center;
+    padding: 10px;
+    color: var(--corLetra);
+    font-weight: 800;
+    font-size: 70px;
+    margin-bottom: 20px;
+
+}
+
+.skillsProjeto {
+    padding: 5px;
+    border-radius: 4px;
+    width: 80px;
+    height: auto;
+    border: solid 2px var(--borderProjetos);
+    background-color: var(--fundoBotãoProjetos);
+    color: var(--corLetraCard);
+    transition: 0.5s;
+}
+
+.skillsProjeto:hover{
+    transform: translateY(-3px);
+}
+
+
+
+.projetosAgrupado {
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardProjeto {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    border: solid 2px var(--borderProjetos);
+    background: var(--corFundoCardProjetos);
+    width: 400px;
+    height: 630px;
+    box-shadow: 3px 3px 3px 1px var(--sombra);
+    transition: 0.5s;
+    flex-direction: column;
+}
+
+.cardProjeto:hover {
+    box-shadow: 0 0px 10px 5px var(--sombraButtonTema);
+    transform: scale(1.03);
+}
+
+.imagemProjeto {
+    border-radius: 8px;
+    border: solid 2px var(--borderProjetos);
+    width: 400px;
+    height: auto;
+    margin-bottom: 5px;
+    filter: opacity(92%);
+}
+
+
+.projetos .cardProjeto h1 {
+    color: var(--corLetra);
+    font-weight: 900;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.projetos .cardProjeto p {
+    color: var(--corLetra);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.buttonProjetos {
+    display: flex;
+    padding: 4px 80px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: solid 1px var(--borderButton);
+    background-color: var(--fundoButton);
+    transition: 0.5s;
+    gap: 8px;
+    color: var(--corLetra);
+    text-align: center;
+    text-decoration: none;
+}
+
+.buttonProjetos:hover {
+    transform: scale(1.02);
+  
+    box-shadow: 0 0px 20px 4px var(--sombraButtonTema);
+    background-color: var(--borderProjetos);
+}
+
+
+
+.buttonProjetos svg {
+    display: block;
+    color: var(--corLetra);
+    width: 25px;
+    height: auto;
+    transition: 1.5s;
+}
+
+/* modal */
+
+.modalProjetos {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    /* começa escondido */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+
+}
+
+.modalProjetos.ativo {
+    display: flex;
+}
+
+.modalProjetosConteudo {
+    border: solid 5px var(--bordaModal);
+    background: linear-gradient(-40deg, var(--backgroundModal1)0%, var(--backgroundModal1)40%, var(--backgroundModal2)60%, var(--backgroundModal2)100%);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 1300px;
+    width: 90%;
+
+}
+
+.modalProjetosConteudo h1 {
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.modalProjetosConteudo h2 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--corLetra);
+}
+
+.modalProjetosConteudo h3 {
+    font-size: 25px;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--strongO);
+}
+
+.modalProjetosConteudo p {
+    margin-left: 8px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--corLetra);
+}
+
+.buttonModalProjetos {
+    padding: 8px 80px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 5px;
+    border: solid 2px var(--borderButton);
+    background-color: var(--fundoButton);
+    gap: 8px;
+    color: var(--corLetra);
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.buttonModalProjetosAgrupado button {
+    padding: 8px 80px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: solid 2px var(--borderProjetos);
+    background-color: var(--fundoBotãoProjetos);
+    color: var(--corLetraCard);
+    gap: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.buttonModalProjetos:hover,
+.buttonModalProjetosAgrupado button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0px 10px 2px var(--sombraButtonTema);
+}
+
+.buttonModalProjetosAgrupado {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+
+
+
+
+/* About me */
+
+.aboutMe {
+    padding: 0px 80px;
+}
+
+.aboutMeAgrupado {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMe h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    color: var(--corLetra);
+}
+
+.aboutMe p {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: var(--corLetra);
+    font-size: 25px;
+}
+
+.aboutMe span {
+    font-weight: 500;
+    color: var(--strongO);
+}
+
+.aboutMe h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--strongO);
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+.aboutMe .aboutMeAgrupado img {
+    width: 1500px;
+    height: auto;
+}
+
+
+
+/* Skills */
+
+.skills {
+    background: linear-gradient(150deg, var(--linearSkills2), var(--linearSkills1));
+    padding: 50px 0px;
+    box-shadow: 0 0px 20px 10px var(--sombraButtonTema);
+}
+
+.skills .skillTitulo {
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--corLetra);
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5em;
+}
+
+.skills ul svg {
+    width: 90px;
+    height: auto;
+    color: var(--corSkills);
+    transition: 0.5s;
+}
+
+.skills ul svg:hover{
+      transform: translateY(-5px);
+      filter: drop-shadow(4px 4px 4px var(--sombraButtonTema)
+      );
+}
+
+.skills ul svg .insideColor {
+    color: var(--corSegundaria);
+}
+
+.skills ul svg .insideColor2 {
+    color: var(--background);
+}
+
+/* Jornada */
+
+
+/* Contato */
+.contato {
+    padding: 30px;
+}
+
+.contatoAgrupado {
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.contatoH1 {
+    text-align: center;
+    padding: 10px;
+    color: var(--corLetra);
+    font-weight: 400;
+    font-size: 70px;
+}
+
+.contatoH2 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: var(--corLetra);
+    font-size: 35px;
+    text-align: center;
+}
+
+.contato h3 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: var(--corLetra);
+    font-size: 35px;
+}
+
+.cardContato {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    /* border: solid 3px var(--bordaLinkContato); */
+    width: 700px;
+    height: 70px;
+    background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 40%, #cbc5f800 100%);
+    margin-bottom: 18px;
+    transition: 0.5s;
+}
+
+.cardContato:hover {
+    transform: translateY(-3px);
+    background: var(--backgroundLinkContato);
+    box-shadow: 0 0px 0px 8px var(--sombraButtonTema);
+
+}
+
+.cardContato svg {
+    margin-left: 10px;
+    align-items: left;
+    width: 70px;
+    height: auto;
+    color: var(--svgLinkContato);
+}
+
+.cardContato h1 {
+    margin-left: 5px;
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--textoLinkContato);
+}
+
+.cardContato h2 {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--textoLinkContato);
+}
+
+.contato img {
+    width: 550px;
+    height: auto;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: var(--corHeader);
+    padding: 5em;
+    box-shadow: 0 -5px 20px 3px var(--sombra);
+}
+
+
+/* cores tema */
+
+:root {
+    --roxoE: #7C68FF;
+    --roxoC: #C0B7FF;
+    --preto: #000000;
+    --cinza: #1B1B1B;
+    --branco: #FFFF;
+    --branquinho: #FEFEFE;
+    --sombras: #06043451;
+    --sombrass: #c1b7ff5c;
+    --corIconeSkill: #1b1b1ba8;
+    --azulEscuro: #09054a;
+    --corFundoCardEscuro: #C0B7FF50;
+    --corFundoCardClaro: #7C68FF50;
+    --brancoOpaco: #ffffff2f;
+    --roxoEscuroOpaco: #7C68FF80;
+    --roxoEscuro: #3C3A49;
+}
+
+.tema-escuro {
+    --background: var(--cinza);
+    --corHeader: var(--preto);
+    --strongH: var(--roxoC);
+    --strongO: var(--roxoC);
+    --botao: var(--roxoC);
+    --letrabotao: var(--preto);
+    --textoHome: var(--branco);
+    --textoHome2: var(--roxoC);
+    --sombra: var(--sombrass);
+    --corSkills: var(--roxoC);
+    --corSegundaria: var(--corIconeSkill);
+    --corLetra: var(--branco);
+    --iconesHome: var(--branco);
+    --borderProjetos: var(--roxoC);
+    --corFundoCardProjetos: var(--corFundoCardEscuro);
+    --corLetraCard: var(--roxoC);
+    --fundoBotãoProjetos: var(--cinza);
+    --borderButton: var(--roxoC);
+    --fundoButton: var(--brancoOpaco);
+    --backgrondTemaButton: var(--cinza);
+    --detalheTemaButton: var(--roxoC);
+    --sombraButtonTema: var(--roxoC);
+    --backgroundLinkContato: var(--roxoC);
+    --textoLinkContato: var(--cinza);
+    --svgLinkContato: var(--cinza);
+    --bordaLinkContato: var(--branco);
+    --linearSkills1: var(--preto);
+    --linearSkills2: var(--roxoEscuro);
+    --background2: var(--roxoEscuro);
+    --backgroundModal1: var(--roxoEscuro);
+    --backgroundModal2: var(--cinza);
+    --bordaModal: var(--roxoC);
+
+}
+
+.tema-claro {
+    --background: var(--branquinho);
+    --corHeader: var(--roxoE);
+    --strongH: var(--branco);
+    --strongO: var(--roxoE);
+    --botao: var(--branco);
+    --letrabotao: var(--roxoE);
+    --textoHome: var(--roxoE);
+    --textoHome2: var(--roxoE);
+    --sombra: var(--sombras);
+    --corSkills: var(--azulEscuro);
+    --corSegundaria: var(--roxoC);
+    --corLetra: var(--azulEscuro);
+    --iconesHome: var(--azulEscuro);
+    --borderProjetos: var(--roxoE);
+    --corFundoCardProjetos: var(--corFundoCardClaro);
+    --corLetraCard: var(--branco);
+    --fundoBotãoProjetos: var(--azulEscuro);
+    --borderButton: var(--azulEscuro);
+    --fundoButton: var(--roxoEscuroOpaco);
+
+    --detalheTemaButton: var(--branco);
+    --backgroundLinkContato: var(--roxoE);
+    --textoLinkContato: var(--branco);
+    --svgLinkContato: var(--branco);
+    --bordaLinkContato: var(--azulEscuro);
+    --sombraButtonTema: var(--roxoE);
+    --linearSkills1: var(--branquinho);
+    --linearSkills2: var(--roxoC);
+    --background2: var(--roxoE);
+    --backgroundModal1: var(--roxoC);
+    --backgroundModal2: var(--background);
+    --bordaModal: var(--roxoE);
+
+}
