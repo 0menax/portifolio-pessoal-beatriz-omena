@@ -17,10 +17,21 @@ body {
     flex-direction: column;
 }
 
-.topoProjetos img {
-    width: 1300px;
-    height: auto;
+.mascoteBaia{
+width: 1300px;
+overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.mascoteBaia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 .topoProjetosAgrupado {
     text-align: center;
@@ -313,7 +324,7 @@ box-shadow: 0 0px 0px 2px #E04700;
 @media screen and (max-width: 1024px){
 
     /* topo */
-.topoProjetos img {
+.mascoteBaia {
     width: 1000px;
 }
 
@@ -374,7 +385,7 @@ box-shadow: 0 0px 0px 2px #E04700;
 @media screen and (max-width: 768px){
    
     /* topo */
-.topoProjetos img {
+.mascoteBaia{
     width: 750px;
 }
 
@@ -449,8 +460,8 @@ box-shadow: 0 0px 0px 2px #E04700;
 @media screen and (max-width: 480px){
    
     /* topo */
-.topoProjetos img {
-    width: 430px;
+.mascoteBaia{
+    width: 480px;
 }
 
 .topoProjetosAgrupado h1 {
@@ -599,7 +610,7 @@ box-shadow: 0 0px 0px 2px #E04700;
 @media screen and (max-width: 392px){
     
     /* topo */
-.topoProjetos img {
+.mascoteBaia{
     width: 380px;
 }
 
@@ -741,6 +752,153 @@ box-shadow: 0 0px 0px 2px #E04700;
 .botoes a{
      width: 300px;
      font-size: 22px;
+}
+
+@media screen and (max-width: 340px){
+    /* topo */
+.mascoteBaia {
+    width: 320px;
+}
+
+.topoProjetosAgrupado h1 {
+    font-size: 40px;
+}
+.topoProjetosAgrupado h2 {
+    font-size: 20px;
+}
+.topoProjetosAgrupado h3 {
+    font-size: 18px;
+}
+.topoProjetosAgrupado p {
+    font-size: 15px;
+}
+
+
+/* contexto */
+.contexto{
+    padding: 1em;
+}
+
+.contexto h1{
+    font-size:30px;
+}
+
+.contexto p{
+    font-size: 15px;
+}
+
+.gifInterface {
+    width: 80px;
+    height: auto;
+}
+
+/* conceito */
+
+.conceito{
+    padding: 1em;
+}
+
+.conceito h1{
+    font-size: 30px;
+}
+
+.conceito p{
+    font-size: 15px;
+}
+
+/* atuação */
+.atuacao{
+    padding: 1em;
+}
+.atuacao h1{
+    font-size: 30px;
+}
+
+.atuacao p{
+    font-size: 15px;
+}
+
+/* responsavel */
+.responsavel{
+    padding: 2em;
+}
+
+.responsavel h1 {
+    font-size: 30px;
+}
+
+.gifBaiaResponsavel{
+     width: 300px;
+     height: 250px;
+     
+}
+.gifTextoAgrupado{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.responsavel ul{
+    font-size: 15px;
+     text-align: center;
+     flex-wrap: wrap;
+}
+
+
+/* abordagem */
+.abordagem{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    flex-direction: column;
+}
+
+.abordagemAgrupado h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.abordagemAgrupado p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.abordagem img{
+     width: 300px;
+     height: auto;
+}
+
+/* resultado */
+
+.topoResultadoAgrupado h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.topoResultadoAgrupado p{
+    font-size: 20px;
+}
+
+
+
+.resultado {
+    padding: 2em;
+}
+
+.resultado img{
+    width: 250px;
+    height: auto;
+}
+
+/* BOTOES */
+.botoes a{
+     width: 200px;
+     font-size: 15px;
+}
+
 }
 
 }
