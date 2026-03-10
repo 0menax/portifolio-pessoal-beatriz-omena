@@ -1276,7 +1276,7 @@
     }
 
     .cardContato {
-        width: 390px;
+        width: 350px;
         background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 100%);
     }
 
@@ -1295,11 +1295,11 @@
     }
 
     .cardContato h1 {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .cardContato h2 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* Footer */
