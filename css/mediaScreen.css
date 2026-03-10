@@ -1349,6 +1349,26 @@ body {
     }
 
 }
+
+@media screen and (max-width: 420px) {
+
+    .projetos .projetosAgrupado .cardProjeto {
+        width: 290px;
+        height: auto;
+        justify-content: flex-start;
+
+    }
+
+.cardContato {
+        width: 340px;
+    }
+
+    .cardContato svg {
+        width: 30px;
+    }
+}
+
+
     @media screen and (max-width: 360px) {
         body {
             background: linear-gradient(var(--background2)0%, var(--background)3%, var(--background)100%);
