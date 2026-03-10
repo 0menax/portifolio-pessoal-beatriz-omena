@@ -82,7 +82,9 @@
 }
 
 @media screen and (max-width: 1024px) {
-
+body {
+        background: linear-gradient(var(--background2)0%, var(--background)6%, var(--background)100%);
+    }
     /* header */
     .containerHeader {
         max-width: 950px;
@@ -149,14 +151,14 @@
     }
 
     .cardProjeto {
-        width: 850px;
-        height: 450px;
+        width: 800px;
+        height: auto;
         justify-content: flex-start;
 
     }
 
     .imagemProjeto {
-        width: 350px;
+        width: 400px;
     }
 
     .projetos h1 {
@@ -214,9 +216,26 @@
     }
 
     .aboutMeAgrupado {
+        align-items: center;
+        text-align: center;
         padding: 50px;
-
+        flex-direction: column;
     }
+
+    .aboutMe .aboutMeAgrupado img{
+        width: 600px;
+    }
+
+    .aboutMe h1{
+        font-size: 70px;
+        margin-bottom: 25px;
+    }
+
+    .aboutMe .aboutMeAgrupado p{
+        font-size: 30px;
+    }
+
+    
 
     /* contato */
 
@@ -243,6 +262,7 @@
 
     .contatoAgrupado {
         gap: 1em;
+        
     }
 
 
@@ -251,7 +271,9 @@
 }
 
 @media screen and (max-width: 768px) {
-
+body {
+        background: linear-gradient(var(--background2)0%, var(--background)4%, var(--background)100%);
+    }
     /* header */
     .containerHeader {
         max-width: 700px;
@@ -423,7 +445,7 @@
 
     .cardProjeto {
         width: 550px;
-        height: 510px;
+        height: auto;
         justify-content: flex-start;
 
     }
@@ -510,7 +532,7 @@
     }
 
     .contato img {
-        width: 400px;
+        width: 500px;
     }
 
     .aboutMe p {
@@ -734,14 +756,14 @@
     }
 
     .cardProjeto {
-        width: 360px;
-        height: 630px;
+        width: 340px;
+        height: auto;
         justify-content: flex-start;
 
     }
 
     .imagemProjeto {
-        width: 350px;
+        width: 340px;
     }
 
     .projetos h1 {
@@ -793,7 +815,7 @@
     /* skills */
 
     .skills {
-        padding: 20px 0px;
+        padding: 20px;
 
     }
 
@@ -823,12 +845,12 @@
 
     }
 
-    .aboutMe h1 {
+    .aboutMe .aboutMeAgrupado h1 {
         font-size: 50px;
     }
 
-    .aboutMe p {
-        font-size: 20px;
+    .aboutMe .aboutMeAgrupado p {
+        font-size: 23px;
     }
 
     .aboutMe .aboutMeAgrupado img {
@@ -1085,7 +1107,7 @@
 
     .cardProjeto {
         width: 300px;
-        height: 600px;
+        height: auto;
         justify-content: flex-start;
 
     }
@@ -1158,7 +1180,7 @@
     /* skills */
 
     .skills {
-        padding: 20px 20px;
+        padding: 30px;
 
     }
 
@@ -1167,7 +1189,7 @@
     }
 
     .skills ul {
-        gap: 2em;
+        gap: 3em;
         flex-wrap: wrap;
 
     }
@@ -1268,7 +1290,7 @@
     }
 
     .contato img {
-        width: 400px;
+        width: 330px;
     }
 
     .aboutMe p {
@@ -1433,7 +1455,6 @@
         position: fixed;
         top: 0;
         left: 0;
-
         width: 100%;
         height: 100vh;
 
@@ -1516,7 +1537,7 @@
 
     .cardProjeto {
         width: 225px;
-        height: 665px;
+        height: auto;
         justify-content: flex-start;
 
     }
@@ -1623,9 +1644,9 @@
     }
 
 
-    .cardContato {
-        
-        width: 290px;
+    .contatoAgrupado .cardContato {
+        padding: 5px;
+        width: 270px;
         background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 100%);
     }
    
@@ -1646,8 +1667,8 @@
     }
 
     .cardContato h1 {
-        margin-left: 15px;
-        font-size: 15px;
+        margin-left: 5px;
+        font-size: 14px;
     }
 
     .cardContato h2 {

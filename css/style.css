@@ -354,7 +354,7 @@ header svg {
     border: solid 2px var(--borderProjetos);
     background: var(--corFundoCardProjetos);
     width: 400px;
-    height: 630px;
+    height: auto;
     box-shadow: 3px 3px 3px 1px var(--sombra);
     transition: 0.5s;
     flex-direction: column;
@@ -557,12 +557,6 @@ header svg {
     gap: 15px;
 }
 
-
-
-
-
-
-
 /* About me */
 
 .aboutMe {
@@ -578,7 +572,6 @@ header svg {
 }
 
 .aboutMeAgrupado {
-
     padding: 100px;
     display: flex;
     align-items: center;
