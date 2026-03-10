@@ -343,7 +343,7 @@ header svg {
     justify-content: center;
 }
 
-.cardProjeto {
+.projetos .projetosAgrupado .cardProjeto {
     margin-top: 35px;
     display: flex;
     justify-content: flex-start;
@@ -358,10 +358,14 @@ header svg {
     box-shadow: 3px 3px 3px 1px var(--sombra);
     transition: 0.5s;
     flex-direction: column;
-
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease;
+    transform: translateY(30px) scale(0);
+    transition: all 0.5s ease;
+}
+
+.projetos .projetosAgrupado .cardProjeto:hover {
+    box-shadow: 0 0px 10px 5px var(--sombraButtonTema);
+    transform: scale(1.03);
 }
 
 .projetos.active .cardProjeto:nth-child(1) {
@@ -381,10 +385,8 @@ header svg {
     transform: translateY(0);
 }
 
-.cardProjeto:hover {
-    box-shadow: 0 0px 10px 5px var(--sombraButtonTema);
-    transform: scale(1.03);
-}
+
+
 
 .imagemProjeto {
     border-radius: 8px;
