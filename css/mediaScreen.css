@@ -1502,6 +1502,7 @@ body {
     }
 
     .textoHomeAgrupado h3 {
+       
         margin-left: 0;
         font-size: 15px;
     }
@@ -1512,8 +1513,9 @@ body {
     }
 
     .home .destaqueHome {
+    
         font-size: 15px;
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .iconsHome ul {
