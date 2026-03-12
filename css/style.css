@@ -875,6 +875,18 @@ footer .footerAgrupado p {
     margin-left: 10px;
 }
 
+/* scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var( --backgrondScroll);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--detalheScroll);
+}
 
 
 
@@ -937,6 +949,8 @@ footer .footerAgrupado p {
     --backgroundFooter: var(--roxoC);
     --backgroundFooter2: var(--cinza);
     --backgroundFooter3: var(--preto);
+    --backgrondScroll: var(--roxoEscuro);
+    --detalheScroll: var(--roxoC);
 }
 
 .tema-claro {
@@ -959,8 +973,6 @@ footer .footerAgrupado p {
     --fundoBotãoProjetos: var(--azulEscuro);
     --borderButton: var(--azulEscuro);
     --fundoButton: var(--roxoEscuroOpaco);
-
-
     --detalheTemaButton: var(--branco);
     --backgroundLinkContato: var(--roxoE);
     --textoLinkContato: var(--branco);
@@ -978,5 +990,6 @@ footer .footerAgrupado p {
     --backgroundFooter: var(--roxoC);
     --backgroundFooter2: var(--roxoE);
     --backgroundFooter3: var(--azulEscuro);
+    --backgrondScroll: var(--roxoEscuroOpaco);
+    --detalheScroll: var(--roxoE);
 }
-
