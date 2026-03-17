@@ -1,17 +1,26 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(var(--background2)0%, var(--background)10%, var(--background)100%);
+
+ 
+  
+    background: linear-gradient(var(--background2)0%, var(--background)8%, var(--background)100%);
+ 
+    
+
     /* background-color: var(--background); */
     /* background: linear-gradient(var(--linearSkills2)0%,var(--linearSkills1)30%, var(--linearSkills1)70%, var(--linearSkills2)100%); */
-
 
 }
 
 * {
     transition: background-color 0.8s ease, color 0.8s ease;
+
+     /* raioX */
+    /* outline: 1px solid red  */
 }
 
 html {
+    
     scroll-behavior: smooth;
 }
 
@@ -126,6 +135,11 @@ header svg {
 /* Home */
 
 .home {
+   background-image:url(/img/backHome.png);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+
     display: flex;
     margin-top: 20px;
     width: 100%;
@@ -265,6 +279,11 @@ header svg {
 /* Projetos */
 
 .projetos {
+        background-image:url(/img/backPenso.png);
+        background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     box-sizing: border-box;
     width: 100%;
     padding: 50px;
@@ -465,6 +484,7 @@ header svg {
 
 .modalProjetosConteudo {
 
+    
     border: solid 5px var(--bordaModal);
     background: linear-gradient(-40deg,
             var(--backgroundModal1) 0%,
@@ -562,7 +582,12 @@ header svg {
 /* About me */
 
 .aboutMe {
-    padding: 0px 60px;
+    background-image:url(/img/backPenso.png);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 5em 10em;
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -574,7 +599,7 @@ header svg {
 }
 
 .aboutMeAgrupado {
-    padding: 100px;
+    gap: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -582,7 +607,7 @@ header svg {
 
 .aboutMe h1 {
     margin-bottom: 10px;
-    font-size: 60px;
+    font-size: 70px;
     color: var(--corLetra);
 }
 
@@ -597,6 +622,8 @@ header svg {
     font-weight: 500;
     color: var(--strongO);
 }
+
+
 
 .aboutMe h2 {
     display: flex;
@@ -707,13 +734,140 @@ header svg {
     opacity: 1;
 }
 
-/* Jornada */
+
+/* Como eu penso */
+
+.comoPenso {
+    background-image:url(/img/backPenso.png);
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+  
+    padding: 5em 12em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.comoPenso h1 {
+    font-size: 70px;
+    align-items: center;
+    text-align: center;
+    color: var(--corLetra);
+    margin-bottom: 20px;
+}
+
+.planejamento {
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.comoPenso .planejamento .planejamentoH2 {
+    font-size: 50px;
+    color: var(--strongO);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.comoPenso .desenvolvimentoH2 {
+    font-size: 50px;
+    color: var(--strongO);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.comoPenso h3 {
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    color: var(--corLetra);
+}
+
+.comoPenso p {
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--corLetra);
+}
+
+.comoPenso ul {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--corLetra);
+    padding: 20px;
+}
+
+.comoPenso ul li::before{
+    content: "▸";
+    margin-right: 10px;
+    color: var(--corLetra);
+}
+
+.comoPenso .destaqueDesenvolvimento {
+    margin-top: 2em;
+    color: var(--strongO);
+    font-weight: 600;
+    text-align: center;
+}
+
+.comoPenso .planejamento .cardPlanejamento {
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    border: solid 2px var(--borderProjetos);
+    background: var(--corFundoCardProjetos);
+    justify-content: flex-start;
+    padding: 25px;
+    align-items: center;
+    text-align: center;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.comoPenso .planejamento .cardPlanejamento:hover {
+    box-shadow: 0 0px 10px 2px var(--sombraButtonTema);
+    transform: scale(1.02);
+}
+
+.imgPlanejamento {
+    border: solid 2px var(--borderProjetos);
+    width: 500px;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.comoPenso .planejamento .cardPlanejamento a {
+    padding: 4px 80px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: solid 1px var(--borderButton);
+    background-color: var(--fundoButton);
+    color: var(--corLetra);
+    text-align: center;
+    text-decoration: none;
+    width: 20px;
+    transition: 0.5s;
+}
+
+.comoPenso .planejamento .cardPlanejamento a:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0px 20px 4px var(--sombraButtonTema);
+    background-color: var(--borderProjetos);
+}
 
 
 /* Contato */
 .contato {
+    background-image:url(/img/backPenso.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
     align-items: center;
-    padding: 30px;
+    padding: 5em 10em;
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -734,6 +888,7 @@ header svg {
 
 
 .contatoH1 {
+    
     text-align: center;
     padding: 10px;
     color: var(--corLetra);
@@ -881,7 +1036,7 @@ footer .footerAgrupado p {
 }
 
 ::-webkit-scrollbar-track {
-    background: var( --backgrondScroll);
+    background: var(--backgrondScroll);
 }
 
 ::-webkit-scrollbar-thumb {
