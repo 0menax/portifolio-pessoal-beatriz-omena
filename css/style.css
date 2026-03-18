@@ -135,7 +135,7 @@ header svg {
 /* Home */
 
 .home {
-    background-image: url(../img/backHome.png);
+    background-image: url(../img/backhome.png);
     background-size: cover;
     background-position: 100%;
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@ header svg {
 /* Projetos */
 
 .projetos {
-    background-image: url(../img/backPenso.png);
+    background-image: url(../img/backpenso.png);
     background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -581,7 +581,7 @@ header svg {
 /* About me */
 
 .aboutMe {
-    background-image: url(../img/backPenso.png);
+    background-image: url(../img/backpenso.png);
     background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -737,7 +737,7 @@ header svg {
 /* Como eu penso */
 
 .comoPenso {
-    background-image: url(../img/backPenso.png);
+    background-image: url(../img/backpenso.png);
     background-size: cover;
     background-position: 100%;
     background-repeat: no-repeat;
@@ -870,7 +870,7 @@ header svg {
 
 /* Contato */
 .contato {
-    background-image: url(../img/backPenso.png);
+    background-image: url(../img/backpenso.png);
     background-size: cover;
     background-repeat: no-repeat;
 
