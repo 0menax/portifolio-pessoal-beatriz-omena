@@ -172,7 +172,7 @@ body {
 
     .projetosAgrupado {
         gap: 10px;
-        
+        flex-direction: column;
     }
 
     .cardProjeto {
@@ -1641,6 +1641,39 @@ body {
     .aboutMe .aboutMeAgrupado img {
         width: 330px;
     }
+        /* Como eu penso */
+    .comoPenso {
+    padding: 10px 3em;
+}
+
+.comoPenso h1{
+    font-size: 40px;
+}
+
+.comoPenso .planejamento .planejamentoH2 {
+    font-size: 30px;
+}
+
+.comoPenso .desenvolvimentoH2{
+    font-size: 30px;
+}
+
+ .comoPenso p  {
+        font-size: 20px;
+    }
+
+    .comoPenso .planejamento .cardPlanejamento{
+            width: 250px;
+ 
+    }
+
+    .imgPlanejamento {
+          width: 250px;
+    }
+
+    .comoPenso .planejamento .cardPlanejamento{
+        padding: 20px;
+    }
 
     /* contato */
 
@@ -1731,6 +1764,8 @@ body {
     .cardContato svg {
         width: 30px;
     }
+
+        
 }
 
 
