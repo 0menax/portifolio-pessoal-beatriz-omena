@@ -980,14 +980,14 @@ body {
         left: 0;
 
         border-radius: 0 0 1000px 0;
-        width: 210px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
         backdrop-filter: blur(5px);
         border-right: solid 10px var(--borderProjetos);
         background: var(--corFundoCardProjetos);
 
         color: var(--corLetra);
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 500;
 
         transform: translateX(-100%) translateY(-100%);
@@ -1367,7 +1367,7 @@ body {
         background: var(--corFundoCardProjetos);
 
         color: var(--corLetra);
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 500;
 
         transform: translateX(-100%) translateY(-100%);
@@ -1856,7 +1856,7 @@ body {
         background: var(--corFundoCardProjetos);
 
         color: var(--corLetra);
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 500;
 
         transform: translateX(-100%) translateY(-100%);
