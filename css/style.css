@@ -1114,6 +1114,7 @@ footer .footerAgrupado p {
     --backgroundFooter3: var(--preto);
     --backgrondScroll: var(--roxoEscuro);
     --detalheScroll: var(--roxoC);
+    --backOverlay: var(--sombras);
 }
 
 .tema-claro {
@@ -1155,4 +1156,5 @@ footer .footerAgrupado p {
     --backgroundFooter3: var(--azulEscuro);
     --backgrondScroll: var(--roxoEscuroOpaco);
     --detalheScroll: var(--roxoE);
+    --backOverlay: var(--corFundoCardEscuro);
 }

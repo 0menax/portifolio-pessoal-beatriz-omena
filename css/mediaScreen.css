@@ -29,12 +29,12 @@
         padding: 30px;
     }
 
-    .projetos  .projetosAgrupado {
+    .projetos .projetosAgrupado {
         gap: 40px;
         flex-wrap: wrap;
     }
 
-    .projetos  .projetosAgrupado .cardProjeto {
+    .projetos .projetosAgrupado .cardProjeto {
         width: 380px;
         height: 650px;
     }
@@ -72,20 +72,21 @@
 
     /* Como eu penso */
 
-   .comoPenso .planejamento .cardPlanejamento{
+    .comoPenso .planejamento .cardPlanejamento {
         width: 400px;
         height: auto;
-   }
-   .imgPlanejamento{
-   width: 400px;
-        height: auto;
-   }
+    }
 
-   .comoPenso .planejamento .cardPlanejamento a {
-    width: 5px;
-    font-size: 20px;
-    padding: 4px 20px;
-   }
+    .imgPlanejamento {
+        width: 400px;
+        height: auto;
+    }
+
+    .comoPenso .planejamento .cardPlanejamento a {
+        width: 5px;
+        font-size: 20px;
+        padding: 4px 20px;
+    }
 
     /* contato */
     .contato img {
@@ -96,8 +97,8 @@
         font-size: 20px;
     }
 
-    .contatoAgrupado{
-flex-wrap: wrap;
+    .contatoAgrupado {
+        flex-wrap: wrap;
     }
 
 
@@ -105,10 +106,11 @@ flex-wrap: wrap;
 
 }
 
-@media screen and (max-width: 1024px) {
-body {
+@media screen and (max-width: 1250px) {
+    body {
         background: linear-gradient(var(--background2)0%, var(--background)6%, var(--background)100%);
     }
+
     /* header */
     .containerHeader {
         max-width: 950px;
@@ -120,7 +122,7 @@ body {
 
     .menu-icons ul {
         gap: 40px;
-        
+
     }
 
     .btn-tema {
@@ -223,7 +225,7 @@ body {
 
     /* tecnologias */
 
-    .tecnologias{
+    .tecnologias {
         padding: 40px;
     }
 
@@ -254,33 +256,33 @@ body {
         flex-direction: column;
     }
 
-    .aboutMe .aboutMeAgrupado img{
+    .aboutMe .aboutMeAgrupado img {
         width: 600px;
     }
 
-    .aboutMe h1{
+    .aboutMe h1 {
         font-size: 70px;
         margin-bottom: 25px;
     }
 
-    .aboutMe .aboutMeAgrupado p{
+    .aboutMe .aboutMeAgrupado p {
         font-size: 30px;
     }
 
     /* como eu penso */
 
-    .comoPenso{
+    .comoPenso {
         align-items: center;
         justify-content: center;
-              text-align: center;
+        text-align: center;
     }
 
-    .planejamento{
-     justify-content: center;
+    .planejamento {
+        justify-content: center;
         flex-wrap: wrap;
 
     }
-    
+
 
     /* contato */
 
@@ -307,16 +309,17 @@ body {
 
     .contatoAgrupado {
         gap: 1em;
-        
+
     }
 
 }
 
-@media screen and (max-width: 768px) {
-    
-body {
+@media screen and (max-width: 1000px) {
+
+    body {
         background: linear-gradient(var(--background2)0%, var(--background)4%, var(--background)100%);
     }
+
     /* header */
     .containerHeader {
         max-width: 700px;
@@ -340,6 +343,27 @@ body {
 
     /* menu lateral */
 
+    .containerHeader .menu-toggle .botaoSaida {
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(255, 0, 0, 0);
+        width: 70px;
+        height: auto;
+        display: none;
+        margin: 0 80%;
+
+    }
+
+    .containerHeader .menu-toggle .botaoSaida.ativo {
+        display: block;
+    }
+
+
+    .containerHeader .menu-toggle .botaoSaida svg {
+        color: var(--corLetra);
+        width: 50px;
+        height: auto;
+
+    }
 
     .containerHeader nav {
         display: none;
@@ -347,7 +371,6 @@ body {
 
 
     .containerHeader .menu-toggle ul li a {
-        margin-bottom: 8px;
         text-decoration: none;
         color: var(--corLetra);
     }
@@ -382,14 +405,15 @@ body {
     }
 
     .containerHeader .menu-toggle {
+        flex-direction: column;
         display: flex;
         position: fixed;
         top: 0;
         left: 0;
 
-        border-radius: 0 0 1000px 0;
-        width: 310px;
-        height: 320px;
+        border-radius: 0 0 350px 0;
+        width: 320px;
+        height: 380px;
         backdrop-filter: blur(5px);
         border-right: solid 10px var(--borderProjetos);
         background: var(--corFundoCardProjetos);
@@ -401,7 +425,7 @@ body {
         transform: translateX(-100%) translateY(-100%);
         transition: transform 0.3s ease;
 
-        padding: 80px 50px;
+        padding: 30px 50px;
 
         z-index: 1001;
     }
@@ -411,11 +435,13 @@ body {
         backdrop-filter: blur(10px);
     }
 
+
+
     .overlay {
         position: fixed;
         top: 0;
         left: 0;
-
+        background: var(--backOverlay);
         width: 100%;
         height: 100vh;
 
@@ -423,7 +449,7 @@ body {
         visibility: hidden;
 
         transition: 0.3s;
-        z-index: 1000;
+        z-index: -1000;
     }
 
     .overlay.ativo {
@@ -434,7 +460,7 @@ body {
     /* home */
 
     .home {
- background-image: none;
+        background-image: none;
 
         margin-top: 20px;
     }
@@ -481,7 +507,7 @@ body {
 
     /* projetos */
     .projetos {
-     background-image: none;
+        background-image: none;
         padding: 30px;
     }
 
@@ -536,7 +562,7 @@ body {
     /* tecnologias */
 
     .tecnologias {
-        
+
         padding: 40px;
     }
 
@@ -555,7 +581,7 @@ body {
 
     /* about Me */
     .aboutMe {
-         background-image: none;
+        background-image: none;
         padding: 30px;
     }
 
@@ -574,20 +600,20 @@ body {
     }
 
     /* comoPenso */
-        .comoPenso {
-             background-image: none;
-    padding: 10px 6em;
-}
+    .comoPenso {
+        background-image: none;
+        padding: 10px 6em;
+    }
 
-.comoPenso h1{
-    font-size: 60px;
-}
+    .comoPenso h1 {
+        font-size: 60px;
+    }
 
 
     /* contato */
-    .contato{
-         background-image: none;
-          padding: 5em 5em;
+    .contato {
+        background-image: none;
+        padding: 5em 5em;
     }
 
     .contatoH1 {
@@ -607,7 +633,7 @@ body {
     }
 
     .cardContato {
-        
+
         width: 500px;
         background: var(--backgroundLinkContato);
     }
@@ -620,8 +646,8 @@ body {
         gap: 0em;
         flex-direction: column;
         text-align: center;
-            align-items: center;
-    justify-content: center;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Footer */
@@ -645,8 +671,8 @@ body {
 }
 
 @media screen and (max-width: 660px) {
-    
-/* home */
+
+    /* home */
 
     .home {
         margin-top: 30px;
@@ -814,27 +840,27 @@ body {
         width: 400px;
     }
 
-      /* Como eu penso */
+    /* Como eu penso */
     .comoPenso {
-    padding: 10px 5em;
-}
+        padding: 10px 5em;
+    }
 
-.comoPenso h1{
-    font-size: 50px;
-}
+    .comoPenso h1 {
+        font-size: 50px;
+    }
 
-.comoPenso .planejamento .planejamentoH2 {
-    font-size: 40px;
-}
+    .comoPenso .planejamento .planejamentoH2 {
+        font-size: 40px;
+    }
 
-.comoPenso .desenvolvimentoH2{
-    font-size: 40px;
-}
+    .comoPenso .desenvolvimentoH2 {
+        font-size: 40px;
+    }
 
     /* contato */
 
-    .contato{
-          padding: 5em 5em;
+    .contato {
+        padding: 5em 5em;
     }
 
     .contatoH1 {
@@ -933,6 +959,27 @@ body {
 
     /* menu lateral */
 
+    .containerHeader .menu-toggle .botaoSaida {
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(255, 0, 0, 0);
+        width: 50px;
+        height: auto;
+        display: none;
+        margin: 0 80%;
+
+    }
+
+    .containerHeader .menu-toggle .botaoSaida.ativo {
+        display: block;
+    }
+
+
+    .containerHeader .menu-toggle .botaoSaida svg {
+        color: var(--corLetra);
+        width: 40px;
+        height: auto;
+
+    }
 
     .containerHeader nav {
         display: none;
@@ -940,14 +987,14 @@ body {
 
 
     .containerHeader .menu-toggle ul li a {
-        margin-bottom: 8px;
         text-decoration: none;
         color: var(--corLetra);
     }
 
     .containerHeader .menu-toggle ul li {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         transition: 0.5s;
+        transform: scale(1);
     }
 
     .containerHeader .menu-toggle ul li:hover {
@@ -960,40 +1007,41 @@ body {
         display: flex;
         position: relative;
         border: none;
+        border-radius: 10px;
         background-color: var(--corHeader);
         width: 45px;
         height: auto;
-        border-radius: 10px;
     }
 
 
     .containerHeader .menu-toggle ul li::before {
         content: "▸";
-        margin-right: 10px;
+        margin-right: 15px;
         color: var(--corLetra);
     }
 
     .containerHeader .menu-toggle {
+        flex-direction: column;
         display: flex;
         position: fixed;
         top: 0;
         left: 0;
 
-        border-radius: 0 0 1000px 0;
-        width: 250px;
-        height: 250px;
+        border-radius: 0 0 350px 0;
+        width: 300px;
+        height: 350px;
         backdrop-filter: blur(5px);
         border-right: solid 10px var(--borderProjetos);
         background: var(--corFundoCardProjetos);
 
         color: var(--corLetra);
-        font-size: 23px;
+        font-size: 25px;
         font-weight: 500;
 
         transform: translateX(-100%) translateY(-100%);
         transition: transform 0.3s ease;
 
-        padding: 60px 30px;
+        padding: 30px 50px;
 
         z-index: 1001;
     }
@@ -1003,11 +1051,13 @@ body {
         backdrop-filter: blur(10px);
     }
 
+
+
     .overlay {
         position: fixed;
         top: 0;
         left: 0;
-
+        background: var(--backOverlay);
         width: 100%;
         height: 100vh;
 
@@ -1015,7 +1065,7 @@ body {
         visibility: hidden;
 
         transition: 0.3s;
-        z-index: 1000;
+        z-index: -1000;
     }
 
     .overlay.ativo {
@@ -1192,33 +1242,35 @@ body {
 
     /* Como eu penso */
 
-        .comoPenso {
-    padding: 10px 2em;
-}
-    .comoPenso .planejamento .cardPlanejamento{
-            width: 300px;
- 
+    .comoPenso {
+        padding: 10px 2em;
+    }
+
+    .comoPenso .planejamento .cardPlanejamento {
+        width: 300px;
+
     }
 
     .comoPenso h3 {
-         font-size: 23px;
-    }
-
-   .comoPenso p  {
         font-size: 23px;
     }
-.comoPenso ul{
+
+    .comoPenso p {
+        font-size: 23px;
+    }
+
+    .comoPenso ul {
         font-size: 23px;
     }
 
     .imgPlanejamento {
-          width: 300px;
+        width: 300px;
     }
 
     /* contato */
 
-    .contato{
-          padding: 2em 2em;
+    .contato {
+        padding: 2em 2em;
     }
 
 
@@ -1311,98 +1363,7 @@ body {
         height: 40px;
     }
 
-/* menu lateral */
-
-
-    .containerHeader nav {
-        display: none;
-    }
-
-
-    .containerHeader .menu-toggle ul li a {
-        margin-bottom: 8px;
-        text-decoration: none;
-        color: var(--corLetra);
-    }
-
-    .containerHeader .menu-toggle ul li {
-        margin-bottom: 15px;
-        transition: 0.5s;
-    }
-
-    .containerHeader .menu-toggle ul li:hover {
-        transform: scale(1.08);
-
-    }
-
-
-    .button-menu-toggle {
-        display: flex;
-        position: relative;
-        border: none;
-        background-color: var(--corHeader);
-        width: 45px;
-        height: auto;
-        border-radius: 10px;
-    }
-
-
-    .containerHeader .menu-toggle ul li::before {
-        content: "▸";
-        margin-right: 10px;
-        color: var(--corLetra);
-    }
-
-    .containerHeader .menu-toggle {
-        display: flex;
-        position: fixed;
-        top: 0;
-        left: 0;
-
-        border-radius: 0 0 1000px 0;
-        width: 210px;
-        height: 220px;
-        backdrop-filter: blur(5px);
-        border-right: solid 10px var(--borderProjetos);
-        background: var(--corFundoCardProjetos);
-
-        color: var(--corLetra);
-        font-size: 20px;
-        font-weight: 500;
-
-        transform: translateX(-100%) translateY(-100%);
-        transition: transform 0.3s ease;
-
-        padding: 60px 30px;
-
-        z-index: 1001;
-    }
-
-    .menu-toggle.ativo {
-        transform: translateX(0) translateY(0);
-        backdrop-filter: blur(10px);
-    }
-
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100vh;
-
-        opacity: 0;
-        visibility: hidden;
-
-        transition: 0.3s;
-        z-index: 1000;
-    }
-
-    .overlay.ativo {
-        opacity: 1;
-        visibility: visible;
-    }
-
+    
     /* home */
 
     .home {
@@ -1561,6 +1522,7 @@ body {
         width: 50px;
 
     }
+
     /* modal */
     .modalProjetosConteudo {
         max-width: 70%;
@@ -1641,37 +1603,38 @@ body {
     .aboutMe .aboutMeAgrupado img {
         width: 330px;
     }
-        /* Como eu penso */
+
+    /* Como eu penso */
     .comoPenso {
-    padding: 10px 3em;
-}
+        padding: 10px 3em;
+    }
 
-.comoPenso h1{
-    font-size: 40px;
-}
+    .comoPenso h1 {
+        font-size: 40px;
+    }
 
-.comoPenso .planejamento .planejamentoH2 {
-    font-size: 30px;
-}
+    .comoPenso .planejamento .planejamentoH2 {
+        font-size: 30px;
+    }
 
-.comoPenso .desenvolvimentoH2{
-    font-size: 30px;
-}
+    .comoPenso .desenvolvimentoH2 {
+        font-size: 30px;
+    }
 
- .comoPenso p  {
+    .comoPenso p {
         font-size: 20px;
     }
 
-    .comoPenso .planejamento .cardPlanejamento{
-            width: 250px;
- 
+    .comoPenso .planejamento .cardPlanejamento {
+        width: 250px;
+
     }
 
     .imgPlanejamento {
-          width: 250px;
+        width: 250px;
     }
 
-    .comoPenso .planejamento .cardPlanejamento{
+    .comoPenso .planejamento .cardPlanejamento {
         padding: 20px;
     }
 
@@ -1748,7 +1711,7 @@ body {
 
 @media screen and (max-width: 420px) {
 
- 
+
 
     .projetos .projetosAgrupado .cardProjeto {
         width: 290px;
@@ -1757,7 +1720,7 @@ body {
 
     }
 
-.cardContato {
+    .cardContato {
         width: 340px;
     }
 
@@ -1765,19 +1728,19 @@ body {
         width: 30px;
     }
 
-        
+
 }
 
 
-    @media screen and (max-width: 380px) {
-        body {
-            background: linear-gradient(var(--background2)0%, var(--background)3%, var(--background)100%);
-        }
-    
+@media screen and (max-width: 380px) {
+    body {
+        background: linear-gradient(var(--background2)0%, var(--background)3%, var(--background)100%);
+    }
+
 
     /* header */
 
-  
+
     .containerHeader {
         max-width: 300px;
         padding: 10px 0;
@@ -1802,6 +1765,27 @@ body {
 
     /* menu lateral */
 
+    .containerHeader .menu-toggle .botaoSaida {
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgba(255, 0, 0, 0);
+        width: 50px;
+        height: auto;
+        display: none;
+        margin: 0 80%;
+
+    }
+
+    .containerHeader .menu-toggle .botaoSaida.ativo {
+        display: block;
+    }
+
+
+    .containerHeader .menu-toggle .botaoSaida svg {
+        color: var(--corLetra);
+        width: 40px;
+        height: auto;
+
+    }
 
     .containerHeader nav {
         display: none;
@@ -1809,14 +1793,14 @@ body {
 
 
     .containerHeader .menu-toggle ul li a {
-        margin-bottom: 8px;
         text-decoration: none;
         color: var(--corLetra);
     }
 
     .containerHeader .menu-toggle ul li {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         transition: 0.5s;
+        transform: scale(1);
     }
 
     .containerHeader .menu-toggle ul li:hover {
@@ -1829,10 +1813,10 @@ body {
         display: flex;
         position: relative;
         border: none;
-        background-color: var(--corHeader);
-        width: 40px;
-        height: auto;
         border-radius: 10px;
+        background-color: var(--corHeader);
+        width: 45px;
+        height: auto;
     }
 
 
@@ -1843,26 +1827,27 @@ body {
     }
 
     .containerHeader .menu-toggle {
+        flex-direction: column;
         display: flex;
         position: fixed;
         top: 0;
         left: 0;
 
-        border-radius: 0 0 1000px 0;
-        width: 210px;
-        height: 220px;
+        border-radius: 0 0 350px 0;
+        width: 200px;
+        height: 350px;
         backdrop-filter: blur(5px);
         border-right: solid 10px var(--borderProjetos);
         background: var(--corFundoCardProjetos);
 
         color: var(--corLetra);
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 500;
 
         transform: translateX(-100%) translateY(-100%);
         transition: transform 0.3s ease;
 
-        padding: 60px 30px;
+        padding: 50px 30px;
 
         z-index: 1001;
     }
@@ -1872,10 +1857,13 @@ body {
         backdrop-filter: blur(10px);
     }
 
+
+
     .overlay {
         position: fixed;
         top: 0;
         left: 0;
+        background: var(--backOverlay);
         width: 100%;
         height: 100vh;
 
@@ -1883,15 +1871,13 @@ body {
         visibility: hidden;
 
         transition: 0.3s;
-        z-index: 1000;
+        z-index: -1000;
     }
 
     .overlay.ativo {
         opacity: 1;
         visibility: visible;
     }
-
-
     /* home */
 
     .home {
@@ -1924,7 +1910,7 @@ body {
     }
 
     .textoHomeAgrupado h3 {
-       
+
         margin-left: 0;
         font-size: 15px;
     }
@@ -1935,7 +1921,7 @@ body {
     }
 
     .home .destaqueHome {
-    
+
         font-size: 15px;
         padding: 0 20px;
     }
@@ -1949,7 +1935,7 @@ body {
         width: 50px;
     }
 
-       /* projetos */
+    /* projetos */
     .projetos {
         padding: 30px;
     }
@@ -1995,19 +1981,19 @@ body {
         font-size: 13px;
     }
 
-    .buttonProjetos{
+    .buttonProjetos {
         font-size: 18px;
         padding: 6px 50px;
     }
 
-/* tecnologias */
+    /* tecnologias */
 
-.tecnologias .skillTitulo {
-    margin-bottom: 25px;
-    font-size: 40px;
-    font-weight: 600;
-    color: var(--corLetra);
-}
+    .tecnologias .skillTitulo {
+        margin-bottom: 25px;
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--corLetra);
+    }
 
     .tecnologias {
         padding: 50px 25px;
@@ -2049,55 +2035,55 @@ body {
 
     /* Como eu penso */
     .comoPenso {
-    padding: 10px 3em;
-}
+        padding: 10px 3em;
+    }
 
-.comoPenso h1{
-    font-size: 40px;
-}
+    .comoPenso h1 {
+        font-size: 40px;
+    }
 
-.comoPenso .planejamento .planejamentoH2 {
-    font-size: 30px;
-}
+    .comoPenso .planejamento .planejamentoH2 {
+        font-size: 30px;
+    }
 
-.comoPenso .desenvolvimentoH2{
-    font-size: 30px;
-}
+    .comoPenso .desenvolvimentoH2 {
+        font-size: 30px;
+    }
 
- .comoPenso p  {
+    .comoPenso p {
         font-size: 20px;
     }
 
-    .comoPenso .planejamento .cardPlanejamento{
-            width: 250px;
- 
+    .comoPenso .planejamento .cardPlanejamento {
+        width: 250px;
+
     }
 
     .imgPlanejamento {
-          width: 250px;
+        width: 250px;
     }
 
-    .comoPenso .planejamento .cardPlanejamento{
+    .comoPenso .planejamento .cardPlanejamento {
         padding: 20px;
     }
 
     /* contato */
 
-    .contato{
+    .contato {
         padding: 20px;
     }
 
-.contato .contatoAgrupado .redesContato ul{
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
+    .contato .contatoAgrupado .redesContato ul {
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
 
-.contato .contatoAgrupado .redesContato ul .cardContato{
-    text-align: center;
-}
+    }
+
+    .contato .contatoAgrupado .redesContato ul .cardContato {
+        text-align: center;
+    }
 
     .contatoH1 {
         font-size: 50px;
@@ -2121,7 +2107,7 @@ body {
         width: 300px;
         background: linear-gradient(90deg, var(--backgroundLinkContato) 0%, var(--backgroundLinkContato) 100%);
     }
-   
+
 
     .contato h3 {
         text-align: center;
@@ -2129,8 +2115,8 @@ body {
     }
 
     .cardContato svg {
-       display: none;
-       align-items: center;
+        display: none;
+        align-items: center;
     }
 
     .contatoAgrupado {
@@ -2173,4 +2159,4 @@ body {
     .footerAgrupado {
         padding: 5px;
     }
-    }
+}
